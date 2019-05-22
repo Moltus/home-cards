@@ -1,0 +1,54 @@
+.card {
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 0 10px lightgrey;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.color-point {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 120px;
+  left: 150px;
+  width: 10px;
+  height: 10px;
+  background-color: crimson;
+  /* transform: scale(1); */
+  transition: all 1s .15s;
+}
+
+.color-outline {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 116px;
+  left: 146px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid crimson;
+  transition: all 1s;
+}
+
+.card-title {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}
+
+.card:hover .color-point {
+  transform: scale(80);
+  background-color: rgb(255, 174, 190);
+}
+
+.card:hover .color-outline {
+  transform: scale(50);
+  border: 5px solid #fff;
+  /* border-color: rgb(255, 174, 190); */
+}
+
+.card.hover .card-title {
+  transform: translateY(-200px);
+}
