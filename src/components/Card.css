@@ -1,7 +1,7 @@
 .card {
   background-color: white;
-  width: 300px;
-  height: 450px;
+  max-width: 250px;
+  max-height: 320px;
   box-shadow: 0 0 10px lightgrey;
   border-radius: 10px;
   overflow: hidden;
@@ -15,7 +15,6 @@
   left: 150px;
   width: 10px;
   height: 10px;
-  /* transform: scale(1); */
   transition: all 1s .15s;
 }
 
@@ -39,13 +38,10 @@
 
 .card:hover .color-dot {
   transform: scale(80);
-  /* background-color: rgb(255, 174, 190); */
 }
 
 .card:hover .color-outline {
   transform: scale(50);
-  
-  /* border: 5px solid rgb(255, 174, 190); */
 }
 
 .card.hover .card-title {

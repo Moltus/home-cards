@@ -7,12 +7,14 @@ const colorizer = {
   orange: { bg: "#dc8214", hover: "#ffd4ae" }
 };
 
+const cardDims = [250, 320];
+
 export const ColorDot = styled.div`
   background-color: ${props => colorizer[props.color].bg};
   position: absolute;
   border-radius: 50%;
-  bottom: 120px;
-  left: 150px;
+  bottom: ${cardDims[1] / 4 + "px"};
+  left: ${cardDims[0] / 2 - 5 + "px"};
   width: 10px;
   height: 10px;
   transition: all 1s 0.15s;
@@ -22,8 +24,8 @@ export const ColorOutline = styled.div`
   border: 1px solid ${props => colorizer[props.color].bg};
   position: absolute;
   border-radius: 50%;
-  bottom: 116px;
-  left: 146px;
+  bottom: ${cardDims[1] / 4 - 4 + "px"};
+  left: ${cardDims[0] / 2 - 9 + "px"};
   width: 16px;
   height: 16px;
   transition: all 1s;
@@ -31,8 +33,9 @@ export const ColorOutline = styled.div`
 
 export const StyledCard = styled.div`
   background-color: white;
-  width: 300px;
-  height: 450px;
+  margin: 10px;
+  width: ${cardDims[0] + "px"};
+  height: ${cardDims[1] + "px"};
   box-shadow: 0 0 10px lightgrey;
   border-radius: 10px;
   overflow: hidden;
@@ -45,13 +48,14 @@ export const StyledCard = styled.div`
 
   &:hover ${ColorOutline} {
     transform: scale(50);
+    border: 5px solid ${props => colorizer[props.color].hover};
   }
 `;
 
 export const CardTitle = styled.h3`
   position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: ${cardDims[1] / 14 + "px"};
   text-align: center;
 `;
 

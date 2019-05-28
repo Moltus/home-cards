@@ -6,7 +6,7 @@ import styled from "styled-components";
 const StyledCardContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 40px;
+  flex-wrap: wrap;
 `;
 
 const CardContainer = () => {
