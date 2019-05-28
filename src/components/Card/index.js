@@ -1,13 +1,14 @@
 import React from "react";
-import StyledCard from "./style";
+import { StyledCard, ColorDot, ColorOutline, CardTitle } from "./style";
 
 class Card extends React.Component {
   render() {
+    console.log(this.props);
     return (
-      <StyledCard>
-        <div className={"color-dot " + this.props.color} />
-        <div className={"color-outline " + this.props.color} />
-        <h3 className="card-title">{this.props.title}</h3>
+      <StyledCard color={this.props.color}>
+        <ColorDot color={this.props.color} />
+        <ColorOutline color={this.props.color} />
+        <CardTitle>{this.props.title}</CardTitle>
       </StyledCard>
     );
   }

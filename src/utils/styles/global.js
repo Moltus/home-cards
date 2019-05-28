@@ -14,6 +14,6 @@ export const FlexCol = styled.div`
   align-items: stretch;
 `;
 
-export const wrapper = styled.div`
-  max-width: 960px;
+export const Wrapper = styled.div`
+  max-width: 1280px;
 `;
