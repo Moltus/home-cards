@@ -8,14 +8,13 @@
   position: relative;
 }
 
-.color-point {
+.color-dot {
   position: absolute;
   border-radius: 50%;
   bottom: 120px;
   left: 150px;
   width: 10px;
   height: 10px;
-  background-color: crimson;
   /* transform: scale(1); */
   transition: all 1s .15s;
 }
@@ -27,7 +26,7 @@
   left: 146px;
   width: 16px;
   height: 16px;
-  border: 1px solid crimson;
+  border: 1px solid;
   transition: all 1s;
 }
 
@@ -38,17 +37,84 @@
   text-align: center;
 }
 
-.card:hover .color-point {
+.card:hover .color-dot {
   transform: scale(80);
-  background-color: rgb(255, 174, 190);
+  /* background-color: rgb(255, 174, 190); */
 }
 
 .card:hover .color-outline {
   transform: scale(50);
-  border: 5px solid #fff;
-  /* border-color: rgb(255, 174, 190); */
+  
+  /* border: 5px solid rgb(255, 174, 190); */
 }
 
 .card.hover .card-title {
   transform: translateY(-200px);
 }
+
+
+.color-dot.red {
+  background-color: #dc143c;
+}
+
+.card:hover .color-dot.red {
+  background-color: #ffaebe;
+}
+
+.color-dot.blue {
+  background-color: #3f14dc;
+}
+
+.card:hover .color-dot.blue {
+  background-color: #b9aeff;
+}
+
+.color-dot.green {
+  background-color: #1edc14;
+}
+
+.card:hover .color-dot.green {
+  background-color: #b5ffae;
+}
+
+.color-dot.orange {
+  background-color: #dc8214;
+}
+
+.card:hover .color-dot.orange {
+  background-color: #ffd4ae;
+}
+
+
+.color-outline.red {
+  border: 1px solid #dc143c;
+}
+
+.card:hover .color-outline.red {
+  border: 5px solid #ffaebe;
+}
+
+.color-outline.blue {
+  border: 1px solid #3f14dc;
+}
+
+.card:hover .color-outline.blue {
+  border: 5px solid #b9aeff;
+}
+
+.color-outline.green {
+  border: 1px solid #1edc14;
+}
+
+.card:hover .color-outline.green {
+  border: 5px solid #b5ffae;
+}
+
+.color-outline.orange {
+  border: 1px solid #dc8214;
+}
+
+.card:hover .color-outline.orange {
+  border: 5px solid #ffd4ae;
+}
+

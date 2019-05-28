@@ -5,9 +5,9 @@ class Card extends React.Component {
   render() {
     return (
       <div className="card">
-        <div className="color-point" />
-        <div className="color-outline" />
-        <h3 className="card-title">MacBook Pro</h3>
+        <div className={"color-dot " + this.props.color} />
+        <div className={"color-outline " + this.props.color} />
+        <h3 className="card-title">{this.props.title}</h3>
       </div>
     );
   }
