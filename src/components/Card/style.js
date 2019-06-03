@@ -46,6 +46,12 @@ export const StyledCard = styled.div`
   overflow: hidden;
   position: relative;
 
+  img {
+    display: block;
+    width: 60%;
+    margin: 10% auto;
+  }
+
   &:hover ${ColorDot} {
     transform: scale(80);
     background-color: ${props => colorizer[props.color].hover};
