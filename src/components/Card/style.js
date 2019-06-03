@@ -46,12 +46,6 @@ export const StyledCard = styled.div`
   overflow: hidden;
   position: relative;
 
-  img {
-    display: block;
-    width: 60%;
-    margin: 10% auto;
-  }
-
   &:hover ${ColorDot} {
     transform: scale(80);
     background-color: ${props => colorizer[props.color].hover};
@@ -60,6 +54,12 @@ export const StyledCard = styled.div`
   &:hover ${ColorOutline} {
     transform: scale(50);
     border: 5px solid ${props => colorizer[props.color].hover};
+  }
+
+  img {
+    display: block;
+    width: 60%;
+    margin: 10% auto;
   }
 `;
 
