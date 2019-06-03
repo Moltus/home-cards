@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 119">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>card-bg-bulge</title>
+  <path class="cls-1" d="M250,150H0V43c21,0,56-12,125-12S229,43,250,43Z" transform="translate(0 -31)"/>
+</svg>

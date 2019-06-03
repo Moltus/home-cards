@@ -14,10 +14,10 @@ const CardContainer = () => {
     <React.Fragment>
       <Wrapper>
         <StyledCardContainer>
-          <Card title="iPhone" color="blue" />
-          <Card title="iPad" color="red" />
-          <Card title="MacBook" color="green" />
-          <Card title="Apple Watch" color="orange" />
+          <Card title="iPhone" color="blue" bg="depression" />
+          <Card title="iPad" color="red" bg="bulge" />
+          <Card title="MacBook" color="green" bg="depression" />
+          <Card title="Apple Watch" color="orange" bg="bulge" />
         </StyledCardContainer>
       </Wrapper>
     </React.Fragment>

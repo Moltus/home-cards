@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// import bulge from "../../images/card-bg-bulge.svg";
+// import depression from "../../images/card-bg-depression.svg";
 
 const colorizer = {
   red: { bg: "#dc143c", hover: "#ffaebe" },
@@ -13,7 +15,7 @@ export const ColorDot = styled.div`
   background-color: ${props => colorizer[props.color].bg};
   position: absolute;
   border-radius: 50%;
-  bottom: ${cardDims[1] / 4 + "px"};
+  bottom: ${cardDims[1] / 5 + "px"};
   left: ${cardDims[0] / 2 - 5 + "px"};
   width: 10px;
   height: 10px;
@@ -24,7 +26,7 @@ export const ColorOutline = styled.div`
   border: 1px solid ${props => colorizer[props.color].bg};
   position: absolute;
   border-radius: 50%;
-  bottom: ${cardDims[1] / 4 - 4 + "px"};
+  bottom: ${cardDims[1] / 5 - 4 + "px"};
   left: ${cardDims[0] / 2 - 9 + "px"};
   width: 16px;
   height: 16px;
@@ -32,7 +34,10 @@ export const ColorOutline = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  background-color: white;
+  background-color: #ccc;
+  background-image: ${props => "url(../images/card-bg-" + props.bg + ".svg)"};
+  background-repeat: no-repeat;
+  background-position: bottom;
   margin: 10px;
   width: ${cardDims[0] + "px"};
   height: ${cardDims[1] + "px"};
@@ -55,7 +60,7 @@ export const StyledCard = styled.div`
 export const CardTitle = styled.h3`
   position: absolute;
   width: 100%;
-  bottom: ${cardDims[1] / 14 + "px"};
+  bottom: ${cardDims[1] / 50 + "px"};
   text-align: center;
 `;
 
