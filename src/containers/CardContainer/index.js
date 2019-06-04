@@ -20,7 +20,7 @@ const CardContainer = () => {
         bg="depression"
       />
       <Card title="Apple Watch" image="watch-small" color="orange" bg="bulge" />
-      <Card title="others" image="others-small" color="grey" bg="depression" />
+      <Card title="Autres" image="others-small" color="grey" bg="depression" />
     </StyledCardContainer>
   );
 };
