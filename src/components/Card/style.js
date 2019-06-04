@@ -51,7 +51,7 @@ export const CardTitle = styled.div`
 export const StyledCard = styled.div`
   cursor: pointer;
   text-align: center;
-  background-color: #eef;
+  background: #efeff2;
   background-image: ${props => "url(../images/card-bg-" + props.bg + ".svg)"};
   background-repeat: no-repeat;
   background-position: bottom;
