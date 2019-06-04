@@ -6,10 +6,11 @@ const colorizer = {
   red: { bg: "#dc143c", hover: "#ffaebe" },
   blue: { bg: "#3f14dc", hover: "#b9aeff" },
   green: { bg: "#1edc14", hover: "#b5ffae" },
-  orange: { bg: "#dc8214", hover: "#ffd4ae" }
+  orange: { bg: "#dc8214", hover: "#ffd4ae" },
+  grey: { bg: "#888", hover: "#bbb" }
 };
 
-const cardDims = [250, 320];
+const cardDims = [250, 300];
 
 export const ColorDot = styled.div`
   background-color: ${props => colorizer[props.color].bg};
@@ -34,7 +35,7 @@ export const ColorOutline = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  background-color: #ccc;
+  background-color: #eef;
   background-image: ${props => "url(../images/card-bg-" + props.bg + ".svg)"};
   background-repeat: no-repeat;
   background-position: bottom;
@@ -57,9 +58,11 @@ export const StyledCard = styled.div`
   }
 
   img {
+    position: relative;
+    z-index: 5;
     display: block;
-    width: 60%;
-    margin: 10% auto;
+    height: 35%;
+    margin: 15% auto;
   }
 `;
 
